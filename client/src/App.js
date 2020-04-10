@@ -3,7 +3,6 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { isEmpty } from 'lodash';
 
-import './App.css';
 import 'typeface-roboto';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';

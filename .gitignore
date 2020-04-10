@@ -1,2 +1,11 @@
 .sass-cache
 .vscode
+.idea
+node_modules
+logs
+*.log
+.cache
+dist
+data
+.env
+

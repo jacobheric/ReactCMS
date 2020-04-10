@@ -15,6 +15,7 @@ import Signin from './Signin';
 import FrontPage from './FrontPage';
 import Post from './Post';
 import Tag from './Tag';
+import { Animation } from "./Animation";
 
 class Contents extends Component {
   render() {
@@ -42,6 +43,10 @@ class Contents extends Component {
     return (
       <Grid container spacing={8}>
         <Header widgets={header} />
+
+        <Grid container justify="center">
+          <Animation />
+        </Grid>
 
         <Sidebar colNum={left_sidebar_cols} widgets={left_sidebar} />
 

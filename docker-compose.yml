@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  db:
+    image: mongo
+    volumes:
+      - ./data:/data/db
+    ports:
+      - "${MONGO_PORT:-27017}:27017"
+  app:
+    build: .
+    environment:
+      - PORT
+      - HOST
+      - MONGO_HOST
+      - MONGO_DB
+      - MONGO_PORT
+    ports:
+      - "${PORT:-3000}:${PORT:-3000}"
+      - "9229:9229"
+      - "9230:9230"
+    tty: true
